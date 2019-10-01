@@ -1,0 +1,27 @@
+---
+title: "Vehicles Fuel Consumption with Respect to Displacement Volume and Weight"
+author: " Ali Pourkhesalian "
+date: "October 2, 2019"
+output: ioslides_presentation
+---
+
+## Code
+
+This presentation shows the cars fuel consumption with respest to the displacement volume of the engine and the weight of the vehicle. The below code generates the plot in the next slide.
+
+```{r, echo=TRUE, eval=FALSE}
+library(plotly)
+library(dplyr)
+data("mtcars")
+plot_ly(mtcars, x = ~disp, y = ~mpg, color = ~wt)
+```
+## Plot
+
+```{r, echo=FALSE, , message=FALSE, comment="", warning=FALSE}
+library(plotly)
+library(dplyr)
+data("mtcars")
+plot_ly(mtcars, x = ~disp, y = ~mpg, color = ~wt)
+```
+
+## Thank you...
